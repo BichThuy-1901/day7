@@ -17,9 +17,7 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.annotation.ApplicationScope;
-import org.springframework.web.context.annotation.SessionScope;
+
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -39,6 +37,7 @@ public class JPAConfig {
         dataSource.setUrl("jdbc:mysql://localhost:3306/spring-jpa-1?characterEncoding=UTF-8&createDatabaseIfNotExist=true");
         dataSource.setUsername("root");
         dataSource.setPassword("12345678abc@");
+        //
         return dataSource;
     }
 
