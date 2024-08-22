@@ -1,6 +1,6 @@
-package mvc.formregistration;
-
-public enum Gender {
-    Male,
-    Female;
-}
+//package mvc.formregistration;
+//
+//public enum Gender {
+//    Male,
+//    Female;
+//}
