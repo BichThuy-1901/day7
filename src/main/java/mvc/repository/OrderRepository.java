@@ -1,10 +1,10 @@
 package mvc.repository;
 
-import mvc.entity.OrderEntity;
+import mvc.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface OrderRepository extends JpaRepository<OrderEntity, Integer> {
-
+public interface OrderRepository extends JpaRepository<Order, Integer> {
 }
+

@@ -8,10 +8,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-    <div class="btn btn-info d-flex align-items-center" style="padding: 10px;"> <!-- Left side: Title -->
-        <h1 class="mb-0">HOME</h1>
-        <a href="${pageContext.request.contextPath}/newBook" class="btn btn-light ml-auto" >My Cart</a>
-        <a href="${pageContext.request.contextPath}/newBook" class="btn btn-light ml-auto" >My Order</a>
+    <div class="btn btn-info d-flex align-items-center" style="padding: 10px;">
+        <a  href="/" class="btn btn-light ml-auto" style="margin-right: 5px">Home </a>
+        <a href="/cart" class="btn btn-light ml-auto" style="margin-right: 5px">My Cart</a>
+        <a href="/order" class="btn btn-light ml-auto">My Order</a>
     </div>
 
 </body>

@@ -1,19 +1,23 @@
 package mvc.session;
 
-import javax.persistence.Column;
+import mvc.entity.Product;
 
 public class CartSession {
-    @Column(name = "product")
-    private String product;
-
-    @Column(name = "quantity")
+    private Product product;
     private int quantity;
 
-    public String getProduct() {
+    // Constructor
+    public CartSession(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
+
+    // Getter và Setter
+    public Product getProduct() {
         return product;
     }
 
-    public void setProduct(String product) {
+    public void setProduct(Product product) {
         this.product = product;
     }
 

@@ -5,6 +5,8 @@
  */
 package mvc.configuration;
 
+import com.sun.el.ExpressionFactoryImpl;
+import jakarta.el.ExpressionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -79,5 +81,8 @@ public class JPAConfig {
     public LocalValidatorFactoryBean validator() {
         return new LocalValidatorFactoryBean();
     }
-
+    @Bean
+    public ExpressionFactory expressionFactory() {
+        return new ExpressionFactoryImpl();
+    }
 }

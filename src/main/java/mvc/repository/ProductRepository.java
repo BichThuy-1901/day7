@@ -1,8 +1,10 @@
 package mvc.repository;
 
-import mvc.entity.OrderEntity;
+import mvc.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ProductRepository extends JpaRepository<ProductRepository, Integer> {
-
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Integer> {
 }
+
